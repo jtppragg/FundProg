@@ -8,22 +8,22 @@ En tu disco duro debería ir quedando una estructura de directorios de la siguie
 
 <pre>
 NetBeansProjects/
-├── p1-operaciones-basicas-jtppragg     -> repositorio
-│   ├── ejercicio1                      -> proyecto de NetBeans
+├── p1-operaciones-basicas-jtppragg/    -> repositorio
+│   ├── ejercicio1/                     -> proyecto de NetBeans
 │   │   └── main.c                      -> fichero de código
-│   ├── ejercicio2                      -> proyecto de NetBeans
+│   ├── ejercicio2/                     -> proyecto de NetBeans
 │   │   └── main.c                      -> fichero de código
 │   └── etc.
-├── p2-sentencias-selectivas-jtppragg   -> repositorio
-│   ├── ejercicio1                      -> proyecto de NetBeans
+├── p2-sentencias-selectivas-jtppragg/  -> repositorio
+│   ├── ejercicio1/                     -> proyecto de NetBeans
 │   │   └── main.c                      -> fichero de código	
-│   ├── ejercicio2
+│   ├── ejercicio2/
 │   │   └── main.c
 │   └── etc.
-├── p3-sentencias-repetitivas-jtppragg
-│   ├── ejercicio1
+├── p3-sentencias-repetitivas-jtppragg/
+│   ├── ejercicio1/
 │   │   └── main.c
-│   ├── ejercicio2
+│   ├── ejercicio2/
 │   │   └── main.c
 │   └── etc.
 └── etc.
