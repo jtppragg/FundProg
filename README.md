@@ -40,5 +40,5 @@ Para cada práctica:
 El directorio `profesor` contiene código de utilidad a partir de la práctica 5. Te permite comprobar si se te ha olvidado liberar memoria o cerrar algún fichero. Para utilizarlo basta con incluir la siguiente línea en tu código:
 
 ```c
-#include "../../profesor/supervisor_c.h"
+#include "../profesor/supervisor_c.h"
 ```
