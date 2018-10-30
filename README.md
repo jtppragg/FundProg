@@ -34,7 +34,7 @@ Para cada práctica:
 
 * Cuando trabajes en un PC por primera vez haz un **clone**.
 * Si ya habías trabajado antes en ese PC haz un **pull**.
-* Cada vez que hagas un cambio haz un **commit** seguido de un **push**.
+* Cada vez que hagas un cambio haz un **commit** seguido de un **push** sobre el **proyecto** (no sobre el fichero `main.c`).
 
 ## Profesor
 El directorio `profesor` contiene código de utilidad a partir de la práctica 5. Te permite comprobar si se te ha olvidado liberar memoria o cerrar algún fichero. Para utilizarlo basta con incluir la siguiente línea en tu código:
