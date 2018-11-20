@@ -1,12 +1,9 @@
-#ifndef __SUPERVISOR_C_H_
-#define __SUPERVISOR_C_H_
-
 /******************************************************************************
-File  : supervisor_c.h
+File  : supervisor.c
 Author: Gorka Prieto, Copyright (c) 2016
-Desc. : Tricky "header" file to help students detect file and memory leaks in
+Desc. : Implementation file to help students detect file and memory leaks in
         their firsts programs in a minimal intrusive way: just include
-        supervisor_c.h and use the standard file and memory functions.
+        supervisor.h and use the standard file and memory functions.
 ******************************************************************************/
 
 #include <stdio.h>
@@ -24,8 +21,8 @@ void printLeaks(void) {
 	printf("File fopen()/fclose()=%d/%d leaks=%d\n",
 		svFopenCount, svFcloseCount, svFopenCount-svFcloseCount);
 	printf("Memory malloc()/realloc()/free()=%d/%d/%d leaks=%d\n",
-		svMallocCount, svReallocCount, svFreeCount,
-		svMallocCount + svReallocCount - svFreeCount);
+        svMallocCount, svReallocCount, svFreeCount,
+        svMallocCount + svReallocCount - svFreeCount);
 	printf("----------------------\n");
 }
 
@@ -59,10 +56,10 @@ void *svMalloc(size_t size) {
 }
 
 void *svRealloc(void *ptr, size_t size) {
-	svRegister();
-	if( ptr == NULL )
-		svReallocCount++;
-	return realloc(ptr, size);
+    svRegister();
+    if( ptr == NULL )
+        svReallocCount++;
+    return realloc(ptr, size);
 }
 
 void svFree(void *ptr) {
@@ -70,12 +67,3 @@ void svFree(void *ptr) {
 	free(ptr);
 	svFreeCount++;
 }
-
-
-#define fopen svFopen
-#define fclose svFclose
-#define malloc svMalloc
-#define realloc svRealloc
-#define free svFree
-
-#endif	// __SUPERVISOR_C_H_
